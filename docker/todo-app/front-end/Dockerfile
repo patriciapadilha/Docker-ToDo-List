@@ -1,8 +1,8 @@
 FROM node:14-alpine AS todofrontend
 
-WORKDIR /frontend
+WORKDIR /app
 
-ADD node_modules.tar.gz .
+ADD node_modules.tar.gz /app
 
 COPY . .
 
